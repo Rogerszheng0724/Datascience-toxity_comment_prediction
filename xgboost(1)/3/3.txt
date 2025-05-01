@@ -1,0 +1,44 @@
+PS C:\Users\Admin\Desktop\datascience> python -u "c:\Users\Admin\Desktop\datascience\xgboost\3\3.py"
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+
+===== Processing target: toxicity =====
+Embedding generation time: 10.01 seconds
+Training time: 37.62 seconds
+Prediction time: 0.05 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.98      0.91      0.94     21502
+           1       0.17      0.44      0.25       954
+           2       0.20      0.27      0.23       522
+           3       0.45      0.44      0.44       632
+           4       0.34      0.32      0.33       264
+           5       0.24      0.16      0.19        58
+           6       0.00      0.00      0.00         4
+
+    accuracy                           0.85     23936
+   macro avg       0.34      0.36      0.34     23936
+weighted avg       0.91      0.85      0.88     23936
+
+ROC-AUC (ovr): 0.9381
+Total processing time: 103.04 seconds
+
+=== toxicity Evaluation Report ===
+{'0': {'precision': 0.9787822414399919, 'recall': 0.9053576411496604, 'f1-score': 0.9406392694063926, 'support': 21502.0}, '1': {'precision': 0.17384173841738418, 'recall': 0.4444444444444444, 'f1-score': 0.24992631889183614, 'support': 954.0}, '2': {'precision': 0.20056497175141244, 'recall': 0.2720306513409962, 'f1-score': 0.23089430894308943, 'support': 522.0}, '3': {'precision': 0.44660194174757284, 'recall': 0.43670886075949367, 'f1-score': 0.4416, 'support': 632.0}, '4': {'precision': 0.3442622950819672, 'recall': 0.3181818181818182, 'f1-score': 0.33070866141732286, 'support': 264.0}, '5': {'precision': 0.23684210526315788, 'recall': 0.15517241379310345, 'f1-score': 0.1875, 'support': 58.0}, '6': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 4.0}, 'accuracy': 0.85235628342246, 'macro avg': {'precision': 0.34012789910021235, 'recall': 0.3616994042385024, 'f1-score': 0.34018122266552014, 'support': 23936.0}, 'weighted avg': {'precision': 0.9067175051946231, 'recall': 0.85235628342246, 'f1-score': 0.875745964024128, 'support': 23936.0}, 'roc_auc': 0.938085852281257}
