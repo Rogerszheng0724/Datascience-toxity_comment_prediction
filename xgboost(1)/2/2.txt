@@ -1,0 +1,32 @@
+PS C:\Users\Admin\Desktop\datascience> python -u "c:\Users\Admin\Desktop\datascience\xgboost\2\2.py"
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+
+===== Processing target: toxicity =====
+Embedding generation time: 6.79 seconds
+Training time: 0.27 seconds
+Prediction time: 0.01 seconds
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.98      0.65      0.79     21502
+           1       0.07      0.31      0.11       954
+           2       0.05      0.24      0.08       522
+           3       0.07      0.16      0.10       632
+           4       0.12      0.30      0.17       264
+           5       0.03      0.16      0.04        58
+           6       0.00      0.00      0.00         4
+
+    accuracy                           0.61     23936
+   macro avg       0.19      0.26      0.19     23936
+weighted avg       0.89      0.61      0.72     23936
+
+ROC-AUC (ovr): 0.7859
+Total processing time: 59.77 seconds
+
+=== toxicity Evaluation Report ===
+{'0': {'precision': 0.9831029185867896, 'recall': 0.6548228071807274, 'f1-score': 0.7860652076820009, 'support': 21502.0}, '1': {'precision': 0.06969130028063611, 'recall': 0.31236897274633124, 'f1-score': 0.11395793499043977, 'support': 954.0}, '2': {'precision': 0.04629967189208895, 'recall': 0.24329501915708812, 'f1-score': 0.0777947932618683, 'support': 522.0}, '3': {'precision': 0.07404637247569185, 'recall': 0.15664556962025317, 'f1-score': 0.1005586592178771, 'support': 632.0}, '4': {'precision': 0.12322274881516587, 'recall': 0.29545454545454547, 'f1-score': 0.17391304347826086, 'support': 264.0}, '5': {'precision': 0.025210084033613446, 'recall': 0.15517241379310345, 'f1-score': 0.043373493975903614, 'support': 58.0}, '6': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 4.0}, 'accuracy': 0.6137616978609626, 'macro avg': {'precision': 0.18879615658342655, 'recall': 0.25967990399314983, 'f1-score': 0.18509473322947864, 'support': 23936.0}, 'weighted avg': {'precision': 0.8902959217335535, 'recall': 0.6137616978609626, 'f1-score': 0.7170488229610846, 'support': 23936.0}, 'roc_auc': 0.7858872682262675}

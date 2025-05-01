@@ -1,0 +1,141 @@
+PS C:\Users\Admin\Desktop\datascience> python -u "c:\Users\Admin\Desktop\datascience\1 - 複製 - 複製.py"
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Using device: cuda
+Processing Targets:   0%|                                                                                                                      | 0/6 [00:00<?, ?it/s]
+===== Processing target column: identity_hate with bert =====
+                                                                                                                                                                     Embedding generation time: 1967.75 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Training time: 1156.24 seconds
+Prediction time: 0.02 seconds
+Classification Report for identity_hate:
+               precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98     23725
+           1       0.17      0.78      0.28       211
+
+    accuracy                           0.96     23936
+   macro avg       0.58      0.87      0.63     23936
+weighted avg       0.99      0.96      0.98     23936
+
+ROC-AUC: 0.9614
+Total processing time for identity_hate: 3196.49 seconds
+Processing Targets:  17%|█████████████████▋                                                                                        | 1/6 [53:16<4:26:23, 3196.63s/it]
+===== Processing target column: insult with bert =====
+                                                                                                                                                                     Embedding generation time: 1682.92 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Training time: 846.93 seconds
+Prediction time: 0.02 seconds
+Classification Report for insult:
+               precision    recall  f1-score   support
+
+           0       0.99      0.94      0.97     22755
+           1       0.44      0.86      0.58      1181
+
+    accuracy                           0.94     23936
+   macro avg       0.72      0.90      0.77     23936
+weighted avg       0.96      0.94      0.95     23936
+
+ROC-AUC: 0.9686
+Total processing time for insult: 2567.48 seconds
+Processing Targets:  33%|██████████████████████████████████▋                                                                     | 2/6 [1:36:04<3:08:26, 2826.65s/it]
+===== Processing target column: obscene with bert =====
+                                                                                                                                                                     Embedding generation time: 1255.96 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Training time: 839.63 seconds
+Prediction time: 0.02 seconds
+Classification Report for obscene:
+               precision    recall  f1-score   support
+
+           0       0.99      0.96      0.97     22669
+           1       0.52      0.88      0.66      1267
+
+    accuracy                           0.95     23936
+   macro avg       0.76      0.92      0.82     23936
+weighted avg       0.97      0.95      0.96     23936
+
+ROC-AUC: 0.9711
+Total processing time for obscene: 2132.99 seconds
+Processing Targets:  50%|████████████████████████████████████████████████████                                                    | 3/6 [2:11:37<2:05:29, 2509.98s/it]
+===== Processing target column: severe_toxic with bert =====
+                                                                                                                                                                     Embedding generation time: 1257.31 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Training time: 1016.44 seconds
+Prediction time: 0.02 seconds
+Classification Report for severe_toxic:
+               precision    recall  f1-score   support
+
+           0       1.00      0.97      0.99     23697
+           1       0.25      0.86      0.38       239
+
+    accuracy                           0.97     23936
+   macro avg       0.62      0.92      0.68     23936
+weighted avg       0.99      0.97      0.98     23936
+
+ROC-AUC: 0.9797
+Total processing time for severe_toxic: 2310.95 seconds
+Processing Targets:  67%|█████████████████████████████████████████████████████████████████████▎                                  | 4/6 [2:50:08<1:21:02, 2431.47s/it]
+===== Processing target column: threat with bert =====
+                                                                                                                                                                     Embedding generation time: 1248.68 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Training time: 886.23 seconds
+Prediction time: 0.02 seconds
+Classification Report for threat:
+               precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99     23865
+           1       0.20      0.77      0.31        71
+
+    accuracy                           0.99     23936
+   macro avg       0.60      0.88      0.65     23936
+weighted avg       1.00      0.99      0.99     23936
+
+ROC-AUC: 0.9832
+Total processing time for threat: 2172.31 seconds
+Processing Targets:  83%|████████████████████████████████████████████████████████████████████████████████████████▎                 | 5/6 [3:26:21<38:58, 2338.07s/it]
+===== Processing target column: toxic with bert =====
+                                                                                                                                                                     Embedding generation time: 1250.39 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+Training time: 803.13 seconds
+Prediction time: 0.02 seconds
+Classification Report for toxic:
+               precision    recall  f1-score   support
+
+           0       0.99      0.93      0.96     21642
+           1       0.56      0.88      0.69      2294
+
+    accuracy                           0.92     23936
+   macro avg       0.78      0.91      0.82     23936
+weighted avg       0.95      0.92      0.93     23936
+
+ROC-AUC: 0.9670
+Total processing time for toxic: 2091.34 seconds
+Processing Targets: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [4:01:12<00:00, 2412.09s/it]
+
+=== identity_hate ===
+{'0': {'precision': 0.9979541200539764, 'recall': 0.9663224446786091, 'f1-score': 0.9818835924450726, 'support': 23725.0}, '1': {'precision': 0.1703011422637591, 'recall': 0.7772511848341233, 'f1-score': 0.27938671209540034, 'support': 211.0}, 'accuracy': 0.9646557486631016, 'macro avg': {'precision': 0.5841276311588678, 'recall': 0.8717868147563661, 'f1-score': 0.6306351522702365, 'support': 23936.0}, 'weighted avg': {'precision': 0.9906582152113237, 'recall': 0.9646557486631016, 'f1-score': 0.9756909603530864, 'support': 23936.0}, 'roc_auc': 0.9614146095415979}
+
+=== insult ===
+{'0': {'precision': 0.9922348047145828, 'recall': 0.9433970555921776, 'f1-score': 0.9671998197792295, 'support': 22755.0}, '1': {'precision': 0.44024337244676226, 'recall': 0.8577476714648603, 'f1-score': 0.581849511774842, 'support': 1181.0}, 'accuracy': 0.9391711229946524, 'macro avg': {'precision': 0.7162390885806725, 'recall': 0.900572363528519, 'f1-score': 0.7745246657770357, 'support': 23936.0}, 'weighted avg': {'precision': 0.9649995991034408, 'recall': 0.9391711229946524, 'f1-score': 0.9481866716444877, 'support': 23936.0}, 'roc_auc': 0.9686009960312432}
+
+=== obscene ===
+{'0': {'precision': 0.9929396662387676, 'recall': 0.9554016498301645, 'f1-score': 0.9738090420629033, 'support': 22669.0}, '1': {'precision': 0.5240112994350282, 'recall': 0.8784530386740331, 'f1-score': 0.6564435269831908, 'support': 1267.0}, 'accuracy': 0.9513285427807486, 'macro avg': {'precision': 0.7584754828368979, 'recall': 0.9169273442520989, 'f1-score': 0.815126284523047, 'support': 23936.0}, 'weighted avg': {'precision': 0.9681179650046292, 'recall': 0.9513285427807486, 'f1-score': 0.9570099901074389, 'support': 23936.0}, 'roc_auc': 0.9710678606149798}
+
+=== severe_toxic ===
+{'0': {'precision': 0.9985715522465587, 'recall': 0.9734987551166815, 'f1-score': 0.9858757665762089, 'support': 23697.0}, '1': {'precision': 0.24700239808153476, 'recall': 0.8619246861924686, 'f1-score': 0.38397017707362535, 'support': 239.0}, 'accuracy': 0.972384692513369, 'macro avg': {'precision': 0.6227869751640467, 'recall': 0.9177117206545751, 'f1-score': 0.6849229718249171, 'support': 23936.0}, 'weighted avg': {'precision': 0.9910671643853688, 'recall': 0.972384692513369, 'f1-score': 0.9798657634056241, 'support': 23936.0}, 'roc_auc': 0.9796789417582474}
+
+=== threat ===
+{'0': {'precision': 0.9993236102303953, 'recall': 0.9905300649486696, 'f1-score': 0.9949074074074075, 'support': 23865.0}, '1': {'precision': 0.19572953736654805, 'recall': 0.7746478873239436, 'f1-score': 0.3125, 'support': 71.0}, 'accuracy': 0.9898897058823529, 'macro avg': {'precision': 0.5975265737984716, 'recall': 0.8825889761363066, 'f1-score': 0.6537037037037037, 'support': 23936.0}, 'weighted avg': {'precision': 0.996939954683381, 'recall': 0.9898897058823529, 'f1-score': 0.992883220996732, 'support': 23936.0}, 'roc_auc': 0.9832127902550437}
+
+=== toxic ===
+{'0': {'precision': 0.9870193726030091, 'recall': 0.9275482857406894, 'f1-score': 0.956360171510243, 'support': 21642.0}, '1': {'precision': 0.5642023346303502, 'recall': 0.8849171752397559, 'f1-score': 0.6890699253224711, 'support': 2294.0}, 'accuracy': 0.9234625668449198, 'macro avg': {'precision': 0.7756108536166797, 'recall': 0.9062327304902227, 'f1-score': 0.822715048416357, 'support': 23936.0}, 'weighted avg': {'precision': 0.9464970511997137, 'recall': 0.9234625668449198, 'f1-score': 0.9307433673343259, 'support': 23936.0}, 'roc_auc': 0.9670246377466657}

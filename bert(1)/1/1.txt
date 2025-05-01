@@ -1,0 +1,40 @@
+PS C:\Users\Admin\Desktop\datascience> python -u "c:\Users\Admin\Desktop\datascience\toxicity\1\tempCodeRunnerFile.py"
+  File "c:\Users\Admin\Desktop\datascience\toxicity\1\tempCodeRunnerFile.py", line 1
+    C:\Users\Admin\Desktop\datascience\toxicity\train.csv
+       ^
+SyntaxError: unexpected character after line continuation character
+PS C:\Users\Admin\Desktop\datascience> python -u "c:\Users\Admin\Desktop\datascience\toxicity\1\1.py"
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Using device: cuda
+
+===== Processing target: toxicity with bert =====
+Embedding generation time: 1191.55 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_logistic.py:1247: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.7. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+Training time: 1582.69 seconds
+Prediction time: 0.02 seconds
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.86      0.92     21502
+           1       0.15      0.50      0.24       954
+           2       0.15      0.29      0.20       522
+           3       0.38      0.40      0.39       632
+           4       0.28      0.43      0.34       264
+           5       0.11      0.26      0.16        58
+           6       0.00      0.00      0.00         4
+
+    accuracy                           0.81     23936
+   macro avg       0.30      0.39      0.32     23936
+weighted avg       0.91      0.81      0.85     23936
+
+ROC-AUC (ovr): 0.9324
+Total processing time: 2812.29 seconds
+
+=== toxicity Evaluation Report ===
+{'0': {'precision': 0.9903959652323211, 'recall': 0.8584782810901311, 'f1-score': 0.9197309417040359, 'support': 21502.0}, '1': {'precision': 0.154296875, 'recall': 0.4968553459119497, 'f1-score': 0.23546944858420268, 'support': 954.0}, '2': {'precision': 0.14858260019550343, 'recall': 0.29118773946360155, 'f1-score': 0.19676375404530744, 'support': 522.0}, '3': {'precision': 0.3810240963855422, 'recall': 0.40031645569620256, 'f1-score': 0.3904320987654321, 'support': 632.0}, '4': {'precision': 0.2825, 'recall': 0.42803030303030304, 'f1-score': 0.34036144578313254, 'support': 264.0}, '5': {'precision': 0.11450381679389313, 'recall': 0.25862068965517243, 'f1-score': 0.15873015873015872, 'support': 58.0}, '6': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 4.0}, 'accuracy': 0.8132520053475936, 'macro avg': {'precision': 0.2959004790867514, 'recall': 0.3904984021210515, 'f1-score': 0.3202125496588956, 'support': 23936.0}, 'weighted avg': {'precision': 0.9125284855768353, 'recall': 0.8132520053475936, 'f1-score': 0.8543289647139878, 'support': 23936.0}, 'roc_auc': 0.93241280015686}

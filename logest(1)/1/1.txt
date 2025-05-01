@@ -1,0 +1,34 @@
+PS C:\Users\Admin\Desktop\datascience> python -u "c:\Users\Admin\Desktop\datascience\logest\1\1.py"
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\Admin\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+
+===== Processing target: toxicity =====
+Embedding generation time: 6.74 seconds
+C:\Users\Admin\anaconda3\envs\datascience\Lib\site-packages\sklearn\linear_model\_logistic.py:1247: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.7. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+Training time: 20.92 seconds
+Prediction time: 0.01 seconds
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.84      0.91     21502
+           1       0.15      0.58      0.24       954
+           2       0.18      0.22      0.20       522
+           3       0.37      0.26      0.30       632
+           4       0.29      0.31      0.30       264
+           5       0.08      0.40      0.14        58
+           6       0.00      0.00      0.00         4
+
+    accuracy                           0.79     23936
+   macro avg       0.29      0.37      0.30     23936
+weighted avg       0.91      0.79      0.84     23936
+
+ROC-AUC (ovr): 0.9145
+Total processing time: 65.32 seconds
+
+=== toxicity Evaluation Report ===
+{'0': {'precision': 0.9881466105861146, 'recall': 0.8413170867826248, 'f1-score': 0.908839709613404, 'support': 21502.0}, '1': {'precision': 0.1501493347814282, 'recall': 0.5796645702306079, 'f1-score': 0.23851628207893033, 'support': 954.0}, '2': {'precision': 0.1750380517503805, 'recall': 0.22030651340996169, 'f1-score': 0.19508057675996607, 'support': 522.0}, '3': {'precision': 0.36818181818181817, 'recall': 0.2563291139240506, 'f1-score': 0.30223880597014924, 'support': 632.0}, '4': {'precision': 0.2924187725631769, 'recall': 0.3068181818181818, 'f1-score': 0.29944547134935307, 'support': 264.0}, '5': {'precision': 0.08273381294964029, 'recall': 0.39655172413793105, 'f1-score': 0.13690476190476192, 'support': 58.0}, '6': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 4.0}, 'accuracy': 0.7947860962566845, 'macro avg': {'precision': 0.2938097715446512, 'recall': 0.3715695986147654, 'f1-score': 0.2972893725252236, 'support': 23936.0}, 'weighted avg': {'precision': 0.9106128331975468, 'recall': 0.7947860962566845, 'f1-score': 0.8417971689622016, 'support': 23936.0}, 'roc_auc': 0.914450433905117}
