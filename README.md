@@ -75,6 +75,8 @@
 
 ## 📚 參考文獻
 本研究引用多篇國際期刊與會議文獻，涵蓋 **不平衡資料處理、社群媒體毒性偵測、深度學習與 NLP** 等領域。
+
+
 [1] A. Sheth, V. L. Shalin, and U. Kursuncu, “Defining and detecting toxicity on social media: context and knowledge are key,” Neurocomputing, vol. 490, pp. 312–318, Jun. 2022, doi: 10.1016/j.neucom.2021.11.095.
 [2] Y. Zhang, V. Hangya, and A. Fraser, “A Study of the Class Imbalance Problem in Abusive Language Detection,” in Proceedings of the 8th Workshop on Online Abuse and Harms (WOAH 2024), Y.-L. Chung, Z. Talat, D. Nozza, F. M. Plaza-del-Arco, P. Röttger, A. Mostafazadeh Davani, and A. Calabrese, Eds., Mexico City, Mexico: Association for Computational Linguistics, Jun. 2024, pp. 38–51. doi: 1
 0.18653/v1/2024.woah-1.4.
